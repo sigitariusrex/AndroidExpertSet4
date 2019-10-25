@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Infosinema</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_setting">Settings</string>
+    <string name="name">Title</string>
+    <string name="details">Detail</string>
+    <string name="overview_synopsis">Overview</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="first_air_date">First Air Date</string>
+    <string name="sort_order_label">Sort Order</string>
+    <string name="sort_order_key">sortOrder</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="highest_rated">Highest Rated</string>
+    <string name="trailer">Trailer</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="menu_film">TV</string>
+    <string name="menu_movie">Movie</string>
+
+</resources>

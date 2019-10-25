@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Infosinema</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_setting">Pengaturan</string>
+    <string name="name">Judul</string>
+    <string name="details">Detail</string>
+    <string name="overview_synopsis">Sinopsis</string>
+    <string name="vote_average">Penilaian</string>
+    <string name="first_air_date">Tanggal Rilis</string>
+    <string name="sort_order_label">Urut Berdasarkan</string>
+    <string name="sort_order_key">urutBerdasarkan</string>
+    <string name="most_popular">Paling Populer</string>
+    <string name="highest_rated">Penilaian Tertinggi</string>
+    <string name="trailer">Cuplikan</string>
+    <string name="favorite">Favorit</string>
+
+    <string name="menu_film">Televisi</string>
+    <string name="menu_movie">Film</string>
+
+</resources>

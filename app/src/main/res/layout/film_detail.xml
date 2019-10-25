@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kingleoners.infosinema.DetailFilmActivity"
+    tools:showIn="@layout/activity_detail_film">
+
+    <LinearLayout
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/activity_detail_film">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintLeft_creator="1" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:textSize="20sp"
+                android:layout_below="@+id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/overview_synopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:text="@string/overview_synopsis"
+                android:paddingTop="@dimen/padding_layout"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:textSize="20sp"
+                android:layout_below="@+id/overview_synopsis"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/overview_synopsis"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:text="@string/vote_average"
+                android:paddingTop="@dimen/padding_layout"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/overview_synopsis"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/overview"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/vote_average"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:textSize="20sp"
+                android:layout_below="@+id/vote"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vote"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1"
+                />
+
+            <TextView
+                android:id="@+id/air_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:text="@string/first_air_date"
+                android:paddingTop="@dimen/padding_layout"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/vote_average"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vote_average"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1"/>
+
+            <TextView
+                android:id="@+id/first_air_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:textSize="20sp"
+                android:layout_below="@+id/air_date"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/air_date"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1"/>
+
+            <TextView
+                android:id="@+id/trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/trailer"
+                android:paddingTop="@dimen/padding_layout"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/first_air_date"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/thumbnailUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                tools:layout_constraintTop_creator="1" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/favorite_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_layout"
+                android:layout_marginTop="30dp"
+                app:layout_constraintRight_toLeftOf="@+id/vote_average"
+                app:layout_constraintTop_toBottomOf="@+id/vote_average"
+                app:layout_constraintBottom_toTopOf="@+id/vote_average"
+                app:layout_constraintLeft_toRightOf="@+id/first_air_date"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                app:layout_constraintTop_toBottomOf="@id/trailer"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
